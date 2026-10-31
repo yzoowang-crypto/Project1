@@ -1,1 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: #222;
+    line-height: 1.6;
+}
+
+img{
+    max-width: 100%;
+}
+
+.site-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #29252a;
+    color: white;
+}
+
+.site-name{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.site-nav{
+    display: flex;
+    gap: 20px;
+}
+
+.site-nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 1150px;
+    margin: 30px auto;
+}
+
+.hero-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.hero-main{
+    background-color: #f9e7ef;
+    padding: 25px;
+}
+
+.hero-main h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero-main p{
+    margin-bottom: 20px;
+}
+
+.hero-side{
+    background-color: white;
+    padding: 25px;
+}
+
+.hero-side h3{
+    margin-top: 15px;
+}
+
+.hero-side ul{
+    margin-left: 20px;
+}
+
+/* Simple buttons */
+.button{
+    background-color: #96466d;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.projects-section{
+    margin-top: 30px;
+}
+
+.projects-section h2{
+    margin-bottom: 15px;
+}
+
+.cards-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+}
+
+.image-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    background-color: #eeeeee;
+    margin-bottom: 15px;
+}
+
+.image-area img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card h3{
+    margin-bottom: 10px;
+}
+
+.card p{
+    margin-bottom: 20px;
+}
+
+.card .button{
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.detail-hero{
+    margin-bottom: 25px;
+}
+
+.detail-hero h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.detail-article{
+    background-color: white;
+    padding: 25px;
+    min-width: 0;
+}
+
+.detail-article h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.detail-article p{
+    margin-bottom: 15px;
+}
+
+.detail-poster{
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 15px;
+}
+
+.detail-sidebar{
+    background-color: white;
+    padding: 20px;
+}
+
+.detail-sidebar p{
+    margin-top: 15px;
+}
+
+.small-text{
+    font-size: 13px;
+}
+
+.site-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #29252a;
+    color: white;
+    padding: 20px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:767px){
+
+    .site-header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .site-nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .cards-gallery{
+        grid-template-columns: 1fr;
+    }
+
+    .content-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
